@@ -1,0 +1,218 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: #434455; /*slate*/
+  letter-spacing: 0.02em;
+}
+/*fonts*/
+.logo {
+  font-family: "Raleway";
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.header-1 {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+}
+.header-2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+}
+.header-3 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+.body-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.small-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+}
+.body-medium-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.button-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+.link-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: #4d5ae5;
+  text-decoration: underline;
+}
+/*font colors*/
+.iris {
+  color: #4d5ae5;
+}
+.ocean {
+  color: #404bbf;
+}
+.navy-blue {
+  color: #2e2f42;
+}
+.slate {
+  color: #434455;
+}
+.light-slate {
+  color: #8e8f99;
+}
+.cornflower {
+  color: #e7e9fc;
+}
+.cloud {
+  color: #f4f4fd;
+}
+.snow {
+  color: #ffffff;
+}
+/*buttons*/
+.main-button {
+  padding: 16px 32px;
+  gap: 10px;
+  background: #4d5ae5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 0;
+  color: #ffffff;
+  cursor: pointer;
+}
+.main-button:focus,
+.main-button:hover,
+.main-button:active {
+  background: #404bbf;
+}
+.filter-button {
+  padding: 16px 32px;
+  gap: 10px;
+  background-color: #f4f4fd;
+  border-radius: 4px;
+  border: 1px solid #e7e9fc;
+  color: #4d5ae5;
+  cursor: pointer;
+}
+.filter-butt:focus,
+.filter-button:hover,
+.filter-button:active {
+  background: #404bbf;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  border: 0;
+  color: #ffffff;
+}
+/*nav links*/
+.my-link {
+  /*padding: 24px 0; - проблема посилань у цьому педдінгу, який поки що не потрібен. Але ж я робив суто по ТЗ (критерії
+  прийняття. Сказано "зробити по стиль-гайду" я ж і зробив :) в рузультаті при наведенні на портфоліо ховер отримумвали
+  контакти, у яких посилання поки порожнє
+  а nav-link буде потрібен потім для позиціонування, це я недовидалив, бо спочатку аж у флєкси вліз в цьому ДЗ */
+  color: #2e2f42;
+  text-decoration: none;
+}
+.my-link:focus,
+.my-link:hover,
+.my-link:active {
+  color: #404bbf;
+  border-bottom: 4px solid #404bbf;
+}
+.address-link {
+  text-decoration: none;
+  font-style: normal;
+}
+.address-link:focus,
+.address-link:hover,
+.address-link:active {
+  color: #404bbf;
+}
+/*background colors*/
+.bg-iris {
+  background-color: #4d5ae5;
+}
+.bg-ocean {
+  background-color: #404bbf;
+}
+.bg-navy-blue {
+  background-color: #2e2f42;
+}
+.bg-green {
+  background-color: #31d0aa;
+}
+.bg-slate {
+  background-color: #434455;
+}
+.bg-light-slate {
+  background-color: #8e8f99;
+}
+.bg-cornflower {
+  background-color: #e7e9fc;
+}
+.bg-cloud {
+  background-color: #f4f4fd;
+}
+.bg-navy-blue-modal {
+  background-color: #2e2f42;
+  opacity: 0.4;
+}
+.bg-grey {
+  background-color: #2e2f42;
+  opacity: 0.7;
+}
+
+/*bloks*/
+.hero {
+  background-color: #2e2f42; /*navy blue*/
+}
+.our-team {
+  background-color: #f4f4fd; /*cloud*/
+}
+
+/*colors
+.iris {
+    color: #4d5ae5;
+  }
+  .ocean {
+    color: #404bbf;
+  }
+  .navy-blue {
+    color: #2e2f42;
+  }
+  .green {
+    color: #31d0aa;
+  }
+  .slate {
+    color: #434455;
+  }
+  .light-slate {
+    color: #8e8f99;
+  }
+  .cornflower {
+    color: #e7e9fc;
+  }
+  .cloud {
+    color:#F4F4FD;
+  }
+  .navy-blue-modal {
+    color: #2e2f42;
+  }
+  .grey {
+    color: #2e2f42;
+  }
+*/
