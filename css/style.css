@@ -11,6 +11,9 @@ body {
 .flex {
   display: flex;
 }
+.full-width {
+  min-width: 1158px;
+}
 /*fonts*/
 .logo {
   font-family: "Raleway";
@@ -169,7 +172,7 @@ body {
 header {
   border-bottom: 1px solid #e7e9fc;
 }
-.my-heder {
+.my-header {
   align-items: center;
   justify-content: space-between;
   height: 72px;
