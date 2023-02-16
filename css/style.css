@@ -14,6 +14,9 @@ body {
 .full-width {
   min-width: 1158px;
 }
+.hide {
+  display: none;
+}
 /*fonts*/
 .logo {
   font-family: "Raleway";
@@ -233,7 +236,7 @@ header {
   text-align: center;
   padding-bottom: 120px;
 }
-.my-products > h2 {
+.my-products-title {
   margin-bottom: 72px;
 }
 .my-products-list {
@@ -244,7 +247,7 @@ header {
   text-align: center;
   padding: 120px 0;
 }
-.my-team > h2 {
+.my-team-title {
   margin-bottom: 72px;
 }
 .my-team-list {
@@ -270,6 +273,37 @@ header {
 .my-footer-text {
   width: 264px;
   margin-top: 16px;
+}
+/**Portfolio.html*/
+/*filtres*/
+.my-filtres {
+  padding-top: 96px;
+}
+.my-filtres-list {
+  justify-content: center;
+}
+.my-filtres-item:not(:last-child) {
+  margin-right: 24px;
+}
+/*portfolio*/
+.my-portfolio {
+  padding: 72px 0 120px;
+}
+.my-portfolio-list {
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+}
+.my-portfolio-item {
+  flex-basis: calc((100% - 48px) / 3);
+}
+.my-portfolio-caption {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: 0;
+}
+.my-portfolio-caption h2 {
+  margin-bottom: 8px;
 }
 /*colors
 .iris {
@@ -302,4 +336,4 @@ header {
   .grey {
     color: #2e2f42;
   }
-*/ ;
+*/
