@@ -1,7 +1,20 @@
 /***Загальні стилі всіх сторінок*/
+:root {
+  --primary-brand: #4d5ae5; /*iris*/
+  --pressed-state: #404bbf; /*ocean*/
+  --dark: #2e2f42; /*navy-blue*/
+  --success: #31d0aa; /*green*/
+  --text: #434455; /*slate*/
+  --subtle-text: #8e8f99; /*light-slate*/
+  --accent: #e7e9fc; /*cornflower*/
+  --light: #f4f4fd; /*cloud*/
+  --modal-overlay: #2e2f4266; /*navy-blue-modal*/
+  --hero-background: #2e2f42b3; /*grey*/
+  --extra-light: #ffffff; /*white*/
+}
 body {
   font-family: "Roboto", sans-serif;
-  color: #434455; /*slate*/
+  color: var(--text);
   letter-spacing: 0.02em;
 }
 .container {
@@ -9,7 +22,7 @@ body {
   padding: 0 15px;
   margin: 0 auto;
 }
-/*видалив .flex і пододавав його до відповдних класів, дійсно перемудрив із ним*/
+/*ментору: видалив .flex і пододавав його до відповдних класів, дійсно перемудрив із ним*/
 .full-width {
   min-width: 1158px;
 }
@@ -28,7 +41,7 @@ body {
   overflow: hidden;
 }
 /*сітки*/
-.my-advantages-list, /*подумав, що логічно всі ці блоки зробити сітками. Бо може потім додасться член команди, або вид діяльності тощо*/
+.my-advantages-list, /*ментору: подумав, що логічно всі ці блоки зробити сітками. Бо може потім додасться член команди, або вид діяльності тощо*/
 .my-products-list,
 .my-team-list,
 .my-portfolio-list {
@@ -90,114 +103,111 @@ body {
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.04em;
-  color: #4d5ae5;
+  color: var(--primary-brand);
   text-decoration: underline;
 }
 /*font colors*/
-.iris {
-  color: #4d5ae5; /*iris*/
+.primary-brand {
+  color: var(--primary-brand); /*iris*/
 }
-.ocean {
-  color: #404bbf; /*ocean*/
+.pressed-state {
+  color: var(--pressed-state); /*ocean*/
 }
-.navy-blue {
-  color: #2e2f42; /*navy-blue*/
+.dark {
+  color: var(--dark); /*navy-blue*/
 }
-.slate {
-  color: #434455; /*slate*/
+.text {
+  color: var(--text); /*slate*/
 }
-.light-slate {
-  color: #8e8f99; /*light-slate*/
+.subtle-text {
+  color: var(--subtle-text); /*light-slate*/
 }
-.cornflower {
-  color: #e7e9fc; /*cornflower*/
+.accent {
+  color: var(--accent); /*cornflower*/
 }
-.cloud {
-  color: #f4f4fd; /*cloud*/
+.light {
+  color: var(--light); /*cloud*/
 }
-.snow {
-  color: #ffffff; /*snow*/
+.extra-light {
+  color: var(--extra-light); /*white*/
 }
 /*buttons*/
 .main-button {
   padding: 16px 32px;
-  gap: 10px;
-  background: #4d5ae5;
+  background: var(--primary-brand);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: 0;
-  color: #ffffff;
+  color: var(--extra-light);
   cursor: pointer;
 }
 .main-button:focus,
 .main-button:hover,
 .main-button:active {
-  background: #404bbf;
+  background: var(--pressed-state);
 }
 .filter-button {
   padding: 16px 32px;
-  gap: 10px;
-  background-color: #f4f4fd;
+  background-color: var(--light);
   border-radius: 4px;
-  border: 1px solid #e7e9fc;
-  color: #4d5ae5;
+  border: 1px solid var(--accent);
+  color: var(--primary-brand);
   cursor: pointer;
 }
 .filter-butt:focus,
 .filter-button:hover,
 .filter-button:active {
-  background: #404bbf;
+  background: Var(--pressed-state);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
-  border: 1px solid #404bbf; /*проблема була в нульовому бордері отут, тому залишив бордер, але перефарбував його в основнй колір кнопки*/
-  color: #ffffff;
+  border: 1px solid var(--pressed-state); /*ментору: проблема була в нульовому бордері отут, тому залишив бордер, але перефарбував його в основнй колір кнопки*/
+  color: var(--extra-light);
 }
 /*background colors*/
-.bg-iris {
-  background-color: #4d5ae5; /*iris*/
+.bg-primary-brand {
+  background-color: var(--primary-brand); /*iris*/
 }
 .bg-ocean {
-  background-color: #404bbf; /*ocean*/
+  background-color: var(--pressed-state); /*ocean*/
 }
-.bg-navy-blue {
-  background-color: #2e2f42; /*navy-blue*/
+.bg-dark {
+  background-color: var(--dark); /*navy-blue*/
 }
-.bg-green {
-  background-color: #31d0aa; /*green*/
+.bg-success {
+  background-color: var(--success); /*green*/
 }
-.bg-slate {
-  background-color: #434455; /*slate*/
+.bg-text {
+  background-color: var(--text); /*slate*/
 }
-.bg-light-slate {
-  background-color: #8e8f99; /*light-slate*/
+.bg-subtle-text {
+  background-color: var(--subtle-text); /*light-slate*/
 }
-.bg-cornflower {
-  background-color: #e7e9fc; /*cornflower*/
+.bg-accent {
+  background-color: var(--accent); /*cornflower*/
 }
-.bg-cloud {
-  background-color: #f4f4fd; /*cloud*/
+.bg-light {
+  background-color: var(--light); /*cloud*/
 }
-.bg-navy-blue-modal {
-  background-color: #2e2f42; /*navy-blue-modal*/
-  opacity: 0.4;
+.bg-modal-overlay {
+  background-color: var(--modal-overlay); /*navy-blue-modal*/
 }
-.bg-grey {
-  background-color: #2e2f42; /*grey*/
-  opacity: 0.7;
+.bg-hero-background {
+  background-color: var(--hero-background); /*grey*/
 }
-.bg-snow {
-  background-color: #ffffff; /*snow*/
+.bg-extra-light {
+  background-color: var(--extra-light); /*white*/
 }
 /*header*/
 header {
-  border-bottom: 1px solid #e7e9fc;
+  border-bottom: 1px solid var(--accent);
 }
 .my-header {
+  padding-top: 24px;
+  padding-bottom: 24px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 72px;
 }
 .my-nav {
   display: flex;
@@ -211,14 +221,14 @@ header {
 }
 .my-link {
   padding: 24px 0;
-  color: #2e2f42;
+  color: var(--dark);
   text-decoration: none;
 }
 .my-link:focus,
 .my-link:hover,
 .my-link:active {
-  color: #404bbf;
-  border-bottom: 4px solid #404bbf;
+  color: var(--pressed-state);
+  border-bottom: 4px solid var(--pressed-state);
 }
 .my-address-list {
   display: flex;
@@ -233,7 +243,7 @@ header {
 .my-address-link:focus,
 .my-address-link:hover,
 .my-address-link:active {
-  color: #404bbf;
+  color: var(--pressed-state);
 }
 /*footer*/
 .my-footer {
@@ -245,10 +255,11 @@ header {
   width: 264px;
   margin-top: 16px;
 }
+/***Індивідульні стілі на окремих сторінках***/
 /**index.html**/
 /*hero*/
 .my-hero {
-  height: 600px; /*а отут, логічно додати фіксовану висоту чи все ж теж паддінгами зробити?*/
+  height: 600px; /*ментору: а отут, логічно додати фіксовану висоту чи все ж теж паддінгами зробити?*/
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -302,10 +313,8 @@ header {
 }
 /**Portfolio.html*/
 /*filtres*/
-.my-filtres {
-  padding-top: 96px;
-}
 .my-filtres-list {
+  margin-bottom: 72px !important;
   display: flex;
   justify-content: center;
 }
@@ -314,48 +323,16 @@ header {
 }
 /*portfolio*/
 .my-portfolio {
-  padding: 72px 0 120px;
+  padding: 96px 0 120px;
 }
 .my-portfolio-item {
   flex-basis: calc((100% - 48px) / 3);
 }
 .my-portfolio-caption {
   padding: 32px 16px;
-  border: 1px solid #e7e9fc;
+  border: 1px solid var(--accent);
   border-top: 0;
 }
 .my-portfolio-caption h2 {
   margin-bottom: 8px;
 }
-/*colors
-.iris {
-    color: #4d5ae5;
-  }
-  .ocean {
-    color: #404bbf;
-  }
-  .navy-blue {
-    color: #2e2f42;
-  }
-  .green {
-    color: #31d0aa;
-  }
-  .slate {
-    color: #434455;
-  }
-  .light-slate {
-    color: #8e8f99;
-  }
-  .cornflower {
-    color: #e7e9fc;
-  }
-  .cloud {
-    color:#F4F4FD;
-  }
-  .navy-blue-modal {
-    color: #2e2f42;
-  }
-  .grey {
-    color: #2e2f42;
-  }
-*/
